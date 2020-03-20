@@ -1,4 +1,4 @@
-<h3 id="header">在某些时候，需要把获取到的Header供爬虫使用</h3>
+<div class="wrapper" id="outputCtt"><h3 id="header">在某些时候，需要把获取到的Header供爬虫使用</h3>
 <p>但是众所周知，浏览器里面复制的Header，爬虫没法用
 如：</p>
 <pre class="prettyprint linenums prettyprinted" style="font-size: 10px; line-height: 12px;"><ol class="linenums"><li class="L0"><span><span><code style="font-size: 10px;line-height: 12px"><span class="pln">accept</span><span class="pun">:*</span><span class="com">/*</span></code></span></span></li></ol></pre>
@@ -7,4 +7,4 @@
 <p>才可以在爬虫中使用
 本文记一个正则表达式，可以一键将Header改成可用版本</p>
 <pre class="prettyprint linenums prettyprinted" style="font-size: 10px; line-height: 12px;"><ol class="linenums"><li class="L0"><span><span><code style="font-size: 10px;line-height: 12px"><span class="pun">查找：</span></code></span></span></li><li class="L1"><span><span><code style="font-size: 10px;line-height: 12px"><span class="pun">(.*?):</span><span class="pln"> </span><span class="pun">(.*?)</span><span class="pln">\n</span></code></span></span></li></ol></pre>
-<pre class="prettyprint linenums prettyprinted" style="font-size: 10px; line-height: 12px;"><ol class="linenums"><li class="L0"><span><span><code style="font-size: 10px;line-height: 12px"><span class="pun">替换：</span></code></span></span></li><li class="L1"><span><span><code style="font-size: 10px;line-height: 12px"><span class="str">'$1'</span><span class="pun">:</span><span class="str">'$2'</span><span class="pun">,</span><span class="pln">\n</span></code></span></span></li></ol></pre>
+<pre class="prettyprint linenums prettyprinted" style="font-size: 10px; line-height: 12px;"><ol class="linenums"><li class="L0"><span><span><code style="font-size: 10px;line-height: 12px"><span class="pun">替换：</span></code></span></span></li><li class="L1"><span><span><code style="font-size: 10px;line-height: 12px"><span class="str">'$1'</span><span class="pun">:</span><span class="str">'$2'</span><span class="pun">,</span><span class="pln">\n</span></code></span></span></li></ol></pre></div>
